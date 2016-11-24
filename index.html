@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+ 		<meta charset="utf-8">
+ 		<title>index</title>
+ 	  
+		<link rel="stylesheet" type="text/css" href="css/style.css">     
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
+ 		<script type="text/javascript" src="js/tmpl.js"></script> 	
+		<script type="text/javascript" src="js/script.js"></script> 
+
+	</head>
+	<body>
+		<div class="wrapper">
+            <div class="carousel-block clearfix">
+				<button class="button-left">Left</button>
+                <div class="jcarousel">
+                    <ul class="carousel-list">
+                        <li class="carousel-element"><img src="img/cat1.jpg" width="300" height="200" alt=""></li>
+                        <li class="carousel-element"><img src="img/cat2.jpg" width="300" height="200" alt=""></li>
+                        <li class="carousel-element"><img src="img/cat3.jpg" width="300" height="200" alt=""></li>
+                        <li class="carousel-element"><img src="img/cat4.jpg" width="300" height="200" alt=""></li>
+                    </ul>
+                </div>
+                <button class="button-right">Right</button>
+            </div> 
+            
+            <script type="text/template" class="template">
+                <div class="tmpl">
+                    <h1 class="head"><%= name %></h1>
+                    <p class="imgAlign">
+                    <%= photo%>
+                    </p>    
+                    <p class="study"><%= study %></p>
+                    <hr>
+                    <h4 class="listHead">Хочу вивчати фронтенд, тому що:</h4>
+                    <ul>
+                        <% reasons.forEach(function(item) { %>
+                            <li class="mark"><%= item %></li>
+                        <% }); %>
+                    </ul>
+                    <hr>
+                    <h4 class="listHead">Мій контактний телефон:</h4>
+                    <ul>
+                        <li class="noMark"><%= number %></li>
+                    </ul>
+                    <h4 class="listHead">Мій профіль ВКонтакті:</h4>
+                    <ul>
+                        <li class="noMark"><%= vk %></li>
+                    </ul>  
+                    <hr>
+                    <h4 class="listHead">Мій фідбек:</h4>
+                    <ul>
+                        <li class="noMark"><%= feedback %></li>
+                    </ul>
+                </div>     
+            </script>
+        </div>
+	</body>
+</html>

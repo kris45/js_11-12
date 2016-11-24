@@ -1,0 +1,86 @@
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.carousel-block {
+    margin: 20px 400px;
+}
+
+.carousel-list {    
+    list-style: none;
+    width: 10000px;
+    position: relative;
+    padding: 0;
+}
+ 
+.carousel-element {
+    display: inline-block;
+    float: left;
+}
+
+.jcarousel {
+    width: 300px;
+    overflow: hidden;
+    float: left;
+}
+
+.button-left,
+.button-right {
+    float: left;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    margin: 100px 20px;
+    cursor: pointer
+}
+
+/* template */
+
+.tmpl{
+    font-family: arial;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    width: 500px;   
+}
+
+.photo{
+    border: 1px solid #605f60;
+    height: 200px;
+    width: 200px;   
+}
+
+.listHead{
+    font-family: "Myriad Pro";
+    font-size: 18px;
+}
+
+.study{
+    color: #1f1f1f;
+    font-size: 14px;
+}
+
+.imgAlign{
+    text-align: center;
+}
+
+h1.head{
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;  
+}
+
+li.mark{
+    color: #3b3b3b;
+    font-family: "Myriad Pro";
+    font-size: 14px;
+}
+
+li.noMark{
+    color: #3b3b3b;
+    font-size: 14px;
+    font-family: "Myriad Pro";
+    list-style-type: none;
+}
